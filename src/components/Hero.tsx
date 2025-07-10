@@ -1,10 +1,10 @@
 import { FaGithub, FaLinkedin, FaHackerrank, FaKaggle, FaChevronDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { useTheme } from "../contexts/ThemeContext";
+//import { useTheme } from "../contexts/ThemeContext";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
-  const { isDark } = useTheme();
+  //const { isDark } = useTheme();
 
   useEffect(() => {
     setIsVisible(true);

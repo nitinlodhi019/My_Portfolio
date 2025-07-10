@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { FaDownload, FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
-import { useTheme } from "../contexts/ThemeContext";
+//import { useTheme } from "../contexts/ThemeContext";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isDark } = useTheme();
+  //const { isDark } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,8 +40,8 @@ export default function Navbar() {
             <span className="text-white font-bold text-lg">N</span>
           </div>
           <h1 className={`text-2xl font-bold transition-colors duration-300 ${
-            isScrolled 
-              ? "text-gray-900 dark:text-white" 
+            isScrolled
+              ? "text-gray-900 dark:text-white"
               : "text-white"
           }`}>
             Nitin Kumar
@@ -56,8 +56,8 @@ export default function Navbar() {
                 <a
                   href={item.href}
                   className={`relative font-medium transition-all duration-300 hover:scale-105 group ${
-                    isScrolled 
-                      ? "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" 
+                    isScrolled
+                      ? "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                       : "text-white/90 hover:text-white"
                   }`}
                 >
@@ -67,7 +67,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          
+
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <a

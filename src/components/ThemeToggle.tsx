@@ -14,12 +14,12 @@ export default function ThemeToggle() {
         <FaSun 
           className={`absolute inset-0 text-yellow-500 transition-all duration-500 ${
             isDark ? 'opacity-0 rotate-90 scale-0' : 'opacity-100 rotate-0 scale-100'
-          }`} 
+          }`}
         />
-        <FaMoon 
+        <FaMoon
           className={`absolute inset-0 text-blue-400 transition-all duration-500 ${
             isDark ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-0'
-          }`} 
+          }`}
         />
       </div>
     </button>
